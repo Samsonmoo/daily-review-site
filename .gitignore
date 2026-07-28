@@ -1,0 +1,3 @@
+.netlify/
+deploy-*.zip
+netlify.toml

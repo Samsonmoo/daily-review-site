@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>每日工作日誌</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+  <nav class="ledger" aria-label="日期列表">
+    <div class="ledger-title">工作日誌<small>DAILY WORK LOG</small></div>
+    <div class="ledger-search">
+      <label class="visually-hidden" for="search-input">搜尋</label>
+      <input id="search-input" type="search" placeholder="搜尋" autocomplete="off" />
+    </div>
+    <ul class="ledger-list" id="ledger-list"></ul>
+  </nav>
+
+  <main class="main" id="main-content">
+    <div class="empty-state">載入中…</div>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
